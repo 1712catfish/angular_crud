@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   constructor(
     private router: Router,
     private modalService: NgbModal,
-    private toastr: ToastrService,
+    // private toastr: ToastrService,
   ) {
     this.employeeList = [];
   }
