@@ -25,9 +25,9 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let employee of employeeList" class="center-align">
-          <td>{{ employee.firstName }}</td>
-          <td>{{ employee.lastName }}</td>
+        <tr *ngFor="let employee of employees" class="center-align">
+          <td>{{ employee.firstname }}</td>
+          <td>{{ employee.lastname }}</td>
           <td>{{ employee.email }}</td>
           <td>{{ employee.address }}</td>
           <td>{{ employee.phone }}</td>
@@ -38,7 +38,7 @@
           </td>
         </tr>
         <tr>
-          <td *ngIf="employeeList.length == 0" colspan="6">No Employee Found</td>
+          <td *ngIf="employees.length == 0" colspan="6">No Employee Found</td>
         </tr>
         </tbody>
       </table>

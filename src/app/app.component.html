@@ -11,15 +11,22 @@
     color: white;
     font-weight: 600;
   }
+
   .toolbar i {
     padding-left: 30px;
     cursor: pointer;
   }
+
   .toolbar .employee {
     float: right;
     padding-right: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
+  }
+
+  .main-content {
+    margin-top: 100px;
+    /* add any other styles you need for your main content here */
   }
 </style>
 
@@ -34,4 +41,8 @@
   </div>
 </nav>
 
-<router-outlet></router-outlet>
+
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>
+
